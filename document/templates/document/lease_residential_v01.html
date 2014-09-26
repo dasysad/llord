@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Residential Lease</title>
+	<script src="/static/js/modernizr.min.js"></script>
+</head>
+<body>
+	<header><h1>Residential Lease</h1></header>
+	<ol>
+	<section>
+		<header><h2>Parties</h2></header>
+		<li>
+		<section>
+			<span>This LEASE, dated <time datetime="{{ }}">{{ }}</time> is between</span>
+			<span>LANDLORD(S) {{ }} called "Landlord," and</span>
+			<span>TENANT(S) {{ }} called "Tenant," for</span>
+			<span>the Property located at {{ }} called "Property."</span>
+		</section>
+		</li>
+		<li>
+		<section>
+			<h3>Co-signers</h3>
+			<span>Co-signers: {{ }}</span>
+			<p>Each Co-signer is individually responsible for all obligations of this Lease, including rent, late fees, damages and other costs. Co-signers do not have the right to occupy the Property as a Tenant without the Landlord's prior written permission.</p>
+		</section>
+		</li>
+		<li><section>
+			<h3>Landlord Contact Information</h3>
+			<section>
+				<h4>Rental Payments</h4>
+				<span>Payable to: {{ }}</span>
+				<span>Address: {{ }}</span>
+				<span>Phone: {{ }}</span>
+				<span>Fax: {{ }}</span>
+			</section>
+			<section>
+				<h4>Maintenance Requests</h4>
+				<span>Contact: {{ }}</span>
+				<span>Address: {{ }}</span>
+				<span>Phone: {{ }}</span>
+				<span>Fax: {{ }}</span>
+			</section>
+		</section></li>
+	</section>
+	<section>
+		<header><h2>Rental Term</h2></header>
+		<li>
+		<section>
+			<header>
+				<hgroup>
+					<h3>Start and End Dates of Lease</h3><h5>(also called "Term")</h5>
+				</hgroup>
+			</header>
+			<ul>
+				<li>(A) Start Date: {{ }}, at {{ }}</li>
+				<li>(B) End Date: {{ }}, at {{ }}</li>
+			</ul>
+		</section>
+		</li>
+		<li>
+		<section>
+			<header>
+				<hgroup>
+					<h3>Renewal Term</h3><h5>(Check One)</h5>
+				</hgroup>
+			</header>
+			<ul>
+				<li>This Lease will AUTOMATICALLY RENEW for a term of {{ }} (also called the "Renewal Term") at the End Date of this Lease or at the end of any Renewal Term unless:
+					<ol>
+						<li>Tenant gives Landlord at the least {{ }} days written notice before the End Date or before the end of any Renewal Term,</li>
+						OR
+						<li>Landlord gives Tenant at least {{ }} days written notice before the End Date or before the end of any Renewal Term.</li>
+					</ol>
+				</li>
+				<li>This Lease will TERMINATE on the End Date unless extended in writing.</li>
+			</ul>
+		</section>
+		</li>
+	</section>
+	</ol>
+<section>
+	<header><h2>RENT AND DEPOSIT</h2></header>
+	<li>
+	<section>
+		<header><h3>RENT</h3></header>
+		<ul>
+			<li>(A) Rent is due in advance, without demand, on or before the {{ }} day of each month.</li>
+			<li>(B) The total Rent due each month is:{{ }}</li>
+			<li>(C) The total amount of Rent due during the Term is: {{ }}</li>
+			<li>(D) If Rent is more than {{ }} days late, Tenant pays a Late Charge of: {{ }}</li>
+			<li>(E) All other payments due from Tenant to Landlord, including Late Charges or utility charges, are considered to be Additional Rent. Failure to pay this Additional Rent is a breach of the Lease in the same way as failing to pay the regular Rent.</li>
+			<li>(F) Tenant agrees that all payments will be applied against outstanding Additional Rent that is due before they will be applied against the current Rent due.</li>
+			<li>(G) Tenant will pay a fee of {{ }} for any payment that is returned by any financial institution for any reason.  Any Late Charges will continue to apply until a valid payment is received.</li>
+			<li>(H) Landlord will accept the following methods of payment:
+				<ul>
+					<li>Cash</li>
+					<li>Personal Check</li>
+					<li>Money Order</li>
+					<li>Credit Cards</li>
+					<li>Other: {{ }}</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	</li>
+	<li>
+	<section>
+		<header><h3>PAYMENTS SCHEDULE</h3></header>
+		<section>
+			<table>
+				<thead><tr>		
+					<th></th><th>Due</th><th>Date</th><th>Paid Due</th>
+				</tr></thead>
+				<tbody>
+					<tr><td>(A) Security Deposit, held in escrow by:</td><td>{{ }}</td><td>{{ }}</td><td>{{ }}</td></tr>
+					<tr><td>(B) First Month’s rent:</td><td>{{ }}</td><td>{{ }}</td><td>{{ }}</td></tr>
+					<tr><td>(C) Last Month’s rent:</td><td>{{ }}</td><td>{{ }}</td><td>{{ }}</td></tr>
+					<tr><td>(D) Other:</td><td>{{ }}</td><td>{{ }}</td><td>{{ }}</td></tr>
+				</tbody>
+				<tfoot>
+					<tr><td>Total Rent and security deposit received to date: {{ }}</td></tr>
+					<tr><td>Total amount due: {{ }}</td></tr>
+				</tfoot>
+			</table>
+		</section>
+	</section>
+	</li>
+	<li>
+	<section>
+		<header>
+			<hgroup>
+				<h3>RETURN OF SECURITY DEPOSITS</h3>
+				<h5>(see Information Regarding Security Deposits on back)</h5>
+			</hgroup>
+		</header>
+		<ul>
+			<li>(A)  When Tenant moves from the Property, Tenant will return all keys and give Landlord written notice of Tenant’s new mailing address where Landlord can return the Security Deposit.</li>
+			<li>(B) Within 30 days after Tenant moves from the Property, Landlord will give Tenant a written list of any damage to the Property that Landlord claims Tenant is responsible for.</li>
+			<li>(C) Landlord may deduct repair costs and any unpaid rents from Tenant’s Security Deposit. Any remaining Security Deposit will be returned to Tenant within 30 days after Tenant moves from the Property.</li>
+		</ul>
+	</section>
+	</li>
+</body>

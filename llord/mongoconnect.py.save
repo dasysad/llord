@@ -1,0 +1,15 @@
+import pymongo
+# from pymongo import MongoClient('ds051378.mongolab.com', 51378)
+from pymongo import MongoClient
+client = MongoClient('mongodb://ohllord:378.mongolab.com:51378')
+client.database_names()
+db = client['llord']
+db.collection_names()
+db.Close()
+# Open the MongoDB connection
+# connMongo = pymongo.Connection('mongodb://ds051378.mongolab.com:51378/llord')
+# Print the available MongoDB databases
+# print connMongo.database_names()
+# Close the mongoDB connection
+# connMongo.close()
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+      <title>LLORD | Document (llord_core_app)</title>
+      <link rel="stylesheet" type="text/css" href="/static/foundation/css/normalize.css" />
+      <link rel="stylesheet" type="text/css" href="/static/foundation/css/foundation.css" />
+      <link rel="stylesheet" type="text/css" href="/static/foundation/css/forms.css" />
+      <link rel="stylesheet" type="text/css" href="/static/foundation/fonts/foundation-icons.css" />
+
+      <link rel="stylesheet" type="text/css" href="/static/css/default.css" />
+      <script src="/static/js/vendor/modernizr.js"></script>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    {% include 'navbar_top.html' %}
+    {% block content %}
+    {% include 'document/lease_residential_v02.html' %}
+    {% endblock %}
+    <script src="/static/js/vendor/jquery.js"></script>
+    <script src="/static/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

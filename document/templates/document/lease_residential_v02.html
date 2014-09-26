@@ -1,0 +1,376 @@
+
+<header><h1>Residential Lease</h1></header>
+<div class="signup-panel">
+<form>
+<ol class="numberedclauses increment">
+<section class="toplevel">
+	<header><h2>Parties</h2></header>
+	<li class="numberedclause">
+		<section>
+			<header><h3>Signers</h3></header>
+			<section>This LEASE, dated
+				<div class="not-editing"><time datetime="{{ x }}">July 1, 2014</time></div>
+					<!--<span class="editing"><i class="fi-calendar"></i><input type="datetime"/></span>-->
+				is between
+			</section>
+			<section>LANDLORD(S)
+				<span class="not-editing">Justin Klaus and Edward Klaus</span>
+				<!--<span class="editing"><i class="fi-torsos"></i><input type="text" /></span>-->
+				called "Landlord," and
+			</section>
+			<section>TENANT(S)				
+				<span class="not-editing">Brian Lang and </span>
+				<!--<span class="editing"><i class="fi-torsos"></i><input type="text" /></span>-->
+				called "Tenant," for the
+			</section>
+			<section>
+				PROPERTY located at	<span class="not-editing"><address>832 N Woodstock St. Philadelphia, PA 19130</address></span>			
+				<!--
+				<div class="row collapse">
+		            <div class="small-2  columns">
+						<span class="prefix"><i class="fi-home"></i></span>
+		            </div>
+		            <div class="small-10  columns">
+						<input type="text"  placeholder="address"/>
+		            </div>
+		        </div>
+		        -->
+				called "Property."
+			</section>
+			<!--
+			<div class="row collapse">
+	            <div class="small-2  columns">
+	              <span class="prefix"><i class="fi-torso-female"></i></span>
+	            </div>
+	            <div class="small-10  columns">
+	              <input type="text" placeholder="username">
+	            </div>
+          	</div>
+          	-->
+		</section>
+	</li>
+	<li class="numberedclause">
+		<section>
+			<header><h3>Co-signers</h3></header>
+			<span>Co-signers: <span class="editing"></span><div class="not-editing">None</div></span>
+			<section>Each Co-signer is individually responsible for all obligations of this Lease, including rent, late fees, damages and other costs. Co-signers do not have the right to occupy the Property as a Tenant without the Landlord's prior written permission.</section>
+		</section>
+	</li>
+	<li class="numberedclause">
+		<section>
+			<header><h3>Landlord Contact Information</h3></header>
+			<div class="row">
+				<section class="small-6 column">
+					<header><h4>Rental Payments</h4></header>
+					<table>
+						<tr><td>Payable to:</td><td><div class="not-editing">Justin Klaus</div></td></tr>
+						<tr><td>Address:</td><td><address><div class="not-editing">832 N Woodstock St. Philadelphia PA, 19130</div></address></td></tr>
+						<tr><td>Phone:</td><td><div class="not-editing">215-519-3552</div></td></tr>
+						<tr><td>Fax:</td><td><div class="not-editing">N/A</div></td></tr>
+					</table>
+				</section>
+				<section class="small-6 column">
+					<header><h4>Maintenance Requests</h4></header>
+					<table>
+						<tr><td>Contact:</td><td><div class="not-editing">Justin Klaus</div></td></tr>
+						<tr><td>Address:</td><td><address><div class="not-editing">832 N Woodstock St. Philadelphia PA, 19130</div></address></td></tr>
+						<tr><td>Phone:</td><td><div class="not-editing">215-519-3552</div></td></tr>
+						<tr><td>Fax:</td><td><div class="not-editing">N/A</div></td></tr>
+					</table>
+				</section>
+			</div>
+		</section>
+	</li>
+</section>
+<section class="toplevel">
+	<header><h2>Rental Term</h2></header>
+	<li class="numberedclause">
+		<section>
+			<header>
+				<hgroup>
+					<h3>Start and End Dates of Lease</h3><h5 class="header-suffix">(also called "Term")</h5>
+				</hgroup>
+			</header>
+			<ol class="alpha-u">
+				<li>Start Date: <time datetime="{{ x }}"><div class="not-editing">July 1, 2014</div>, at <div class="not-editing">time</div></time></li>
+				<li>End Date: <time datetime="{{ x }}"><div class="not-editing">May 31, 2015</div>, at <div class="not-editing">time</div></time></li>
+			</ol>
+		</section>
+	</li>
+	<li class="numberedclause">
+		<section>
+			<header>
+				<hgroup>
+					<h3>Renewal Term</h3><h5>(Check One)</h5>
+				</hgroup>
+			</header>
+			<fieldset>
+			<ul>
+				<li>
+					<input type="radio" name="end_of_term_option" id="end_of_term_option-renew" value="renew" />
+					<label for="end_of_term_option-renew">This Lease will AUTOMATICALLY RENEW for a term of {{ x }} (also called the "Renewal Term") at the End Date of this Lease or at the end of any Renewal Term unless:</label>
+					<ol>
+						<li>Tenant gives Landlord at the least {{ x }} days written notice before the End Date or before the end of any Renewal Term,</li>
+						OR
+						<li>Landlord gives Tenant at least {{ x }} days written notice before the End Date or before the end of any Renewal Term.</li>
+					</ol>
+				</li>
+				<li>
+					<input type="radio" name="end_of_term_option" id="end_of_term_option-terminate" value="terminate" />
+					<label for="end_of_term_option-terminate">This Lease will TERMINATE on the End Date unless extended in writing.</label>
+				</li>
+			</ul>
+			</fieldset>
+		</section>
+	</li>
+</section>
+<section class="toplevel">
+	<header><h2>Rent and Deposit</h2></header>
+	<li class="numberedclause">
+		<section>
+			<header><h3>RENT</h3></header>
+			<ol class="alpha-u">
+				<li>(A) Rent is due in advance, without demand, on or before the {{ x }} day of each month.</li>
+				<li>(B) The total Rent due each month is:{{ x }}</li>
+				<li>(C) The total amount of Rent due during the Term is: {{ x }}</li>
+				<li>(D) If Rent is more than {{ x }} days late, Tenant pays a Late Charge of: {{ x }}</li>
+				<li>(E) All other payments due from Tenant to Landlord, including Late Charges or utility charges, are considered to be Additional Rent. Failure to pay this Additional Rent is a breach of the Lease in the same way as failing to pay the regular Rent.</li>
+				<li>(F) Tenant agrees that all payments will be applied against outstanding Additional Rent that is due before they will be applied against the current Rent due.</li>
+				<li>(G) Tenant will pay a fee of {{ x }} for any payment that is returned by any financial institution for any reason.  Any Late Charges will continue to apply until a valid payment is received.</li>
+				<li>(H) Landlord will accept the following methods of payment:
+					<ul>
+						<li>Cash</li>
+						<li>Personal Check</li>
+						<li>Money Order</li>
+						<li>Credit Cards</li>
+						<li>Other: {{ x }}</li>
+					</ul>
+				</li>
+			</ol>
+		</section>
+	</li>
+	<li class="numberedclause">
+		<section>
+			<header><h3>PAYMENTS SCHEDULE</h3></header>
+			<section>
+				<table>
+					<thead><tr>		
+						<th></th><th>Due</th><th>Date</th><th>Paid</th><th>Due</th>
+					</tr></thead>
+					<tbody>
+						<ul class="alpha-u">
+							<li><tr><td>Security Deposit, held in escrow by:</td><td>{{ x }}</td><td>{{ x }}</td><td>{{ x }}</td><td>{{ x }}</td></tr></li>
+							<li><tr><td>(B) First Month’s rent:</td><td>{{ x }}</td><td>{{ x }}</td><td>{{ x }}</td><td>{{ x }}</td></tr></li>
+							<li><tr><td>(C) Last Month’s rent:</td><td>{{ x }}</td><td>{{ x }}</td><td>{{ x }}</td><td>{{ x }}</td></tr></li>
+							<li><tr><td>(D) Other:</td><td>{{ x }}</td><td>{{ x }}</td><td>{{ x }}</td><td>{{ x }}</td></tr></li>
+						</ul>
+					</tbody>
+					<tfoot>
+						<tr><td colspan="3">Total Rent and security deposit received to date:</td><td>{{ x }}</td></tr>
+						<tr><td colspan="4">Total amount due:</td><td>{{ x }}</td></tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+	</li>
+	<li class="numberedclause">
+		<section>
+			<header>
+				<hgroup>
+					<h3>RETURN OF SECURITY DEPOSITS</h3>
+					<h5>(see Information Regarding Security Deposits on back)</h5>
+				</hgroup>
+			</header>
+			<ol class="alpha-u">
+				<li>(A)  When Tenant moves from the Property, Tenant will return all keys and give Landlord written notice of Tenant’s new mailing address where Landlord can return the Security Deposit.</li>
+				<li>(B) Within 30 days after Tenant moves from the Property, Landlord will give Tenant a written list of any damage to the Property that Landlord claims Tenant is responsible for.</li>
+				<li>(C) Landlord may deduct repair costs and any unpaid rents from Tenant’s Security Deposit. Any remaining Security Deposit will be returned to Tenant within 30 days after Tenant moves from the Property.</li>
+			</ol>
+		</section>
+	</li>
+</section>
+<section class="toplevel">
+	<header><h2>Care and Use of Property</h2></header>
+
+9. USE OF PROPERTY AND AUTHORIZED OCCUPANTS
+(A) Tenant will use Property as a residence ONLY.
+(B) Not more than {{ 2 }} people will live on Property. List all other occupants who are not listed as Tenants in paragraph 1: {{ Not_Applicable }}
+10. POSSESSION
+(A) Tenant may move in (take possession of the Property) on the Start Date of this Lease.
+(B) If Tenant cannot move in within {{ 7 }} days after Start Date because the previous tenant is still there or because of property damage, Tenant’s exclusive rights are to:
+1. Change the starting date of the Lease to the day when the Property is available. Tenant will not owe rent until the Property is available; 
+OR
+2. End the Lease and have all money paid as rent or security deposit returned, with no further liability on the part of Landlord or Tenant.
+11. LANDLORD’S RIGHT TO ENTER
+(A) Tenant agrees that Landlord or Landlord’s representatives may enter the Property at reasonable hours to inspect, repair, or show the Property. Tenant does not have to allow possible tenants to enter unless they are with the Landlord or Landlord’s representative, or they have written permission from the Landlord.
+(B) When possible, Landlord will give Tenant {{ 24 }} hours notice of the date, time, and reason for visit.
+(C) In emergencies, Landlord may enter Property without notice. If Tenant is not present, Landlord will tell Tenant who was there and why within 24 hours of the visit.
+(D) Landlord may put up For Sale or For Rent signs on or near the Property.
+12. CONDITION OF PROPERTY AT MOVE IN
+Tenant has inspected the Property and agrees to accept the Property "as-is," except for the following: 
+13. APPLIANCES INCLUDED
+Stove, Refrigerator, Dishwasher, Washer, Dryer, Garbage Disposal, Microwave, Heating/Air Conditioning, Hot Water Heater
+Landlord is responsible for repairs to appliances listed above unless otherwise stated here: {{ x }}
+14. UTILITIES AND SERVICES
+Landlord and Tenant agree to pay for the charges for utilities and services provided for the Property as marked below. If a service is not marked as being paid by the Landlord, it is the responsibility of Tenant to pay for that service.  Landlord is not responsible for loss of service if interrupted by circumstances beyond the Landlord's control.
+
+<table>
+	<thead><tr><th>Utility/Service</th><th>Landlord</th><th>Tenant</th><th>NA</th><th>Notes</th></tr></thead>
+	<tr><td>Gas</td><td></td><td>X</td><td></td><td></td></tr>
+	<tr><td>Electricity</td><td></td><td>X</td><td></td><td></td></tr>
+	<tr><td>Cable / Internet</td><td></td><td>X</td><td></td><td></td></tr>
+	<tr><td>Condominium Fee</td><td></td><td></td><td>X</td><td></td></tr>
+	<tr><td>Central Heat</td><td></td><td>X</td><td></td><td>Gas</td></tr>
+	<tr><td>Central Air Conditioning</td><td></td><td>X</td><td></td><td>Electric</td></tr>
+	<tr><td>Hot Water Heater</td><td></td><td>X</td><td></td><td>Electric</td></tr>
+	<tr><td>Cold Water</td><td>X</td><td></td><td></td><td></td></tr>
+	<tr><td>Parking Fee</td><td></td><td></td><td>X</td><td></td></tr>
+	<tr><td>Maintenance of Common Areas</td><td></td><td></td><td></td><td></td></tr>
+	<tr><td>Trash Removal</td><td>X</td><td></td><td></td><td></td></tr>
+	<tr><td>Pest/Rodent Control</td><td></td><td>X</td><td></td><td></td></tr>
+	<tr><td>Sewage Fees</td><td></td><td></td><td>X</td><td></td></tr>
+	<tr><td>Snow/Ice Removal</td><td></td><td>X</td><td></td><td></td></tr>
+	<tr><td>Sewer Maintenance</td><td>X</td><td></td><td></td><td></td></tr>
+	<tr><td>Telephone Service</td><td></td><td>X</td><td></td><td></td></tr>
+	<tr><td>Lawn and Shrubbery Care</td><td>X</td><td></td><td></td><td></td></tr>
+	<tr><td>Heater Maintenance Contract</td><td></td><td></td><td></td><td></td></tr>
+	<tfoot><tr><td>Comments</td><td colspan="4"></td></tr></tfoot>
+</table>
+</section>
+
+15. TENANT’S CARE OF PROPERTY
+(A) Tenant will:
+1. Keep the Property clean and safe.
+2. Dispose of all trash, garbage and any other waste materials as required by Landlord and the law.
+3. Use care when using any of the electrical, plumbing, heating, ventilation or other facilities or appliances on the Property, including any elevators.
+4. Tell Landlord immediately of any repairs needed and of any potentially harmful health or environmental conditions.
+5. Abide by the rules and regulations of the property as specified in the Rules and Regulations addendum.
+6. Obey all laws.
+(B) Tenant will not: 
+1. Keep any flammable, hazardous and/or explosive materials on the Property.
+2. Destroy, damage or deface any part of the Property or common areas. 
+3. Disturb the peace and quiet of other tenants or neighbors.
+4. Make changes to the property, such as painting or remodeling, without the written permission of Landlord.  Tenant agrees that any changes or improvements made will belong to the Landlord.
+5. Perform any maintenance or repairs on the Property unless otherwise stated in the Rules and Regulations, if any.
+(C) Tenant is solely responsible to pay the costs for repairing any damage that is the fault of Tenant or Tenant's family or guests. 
+16. SUBLEASING AND TRANSFER
+(A) Landlord may transfer this Lease to another Landlord. Tenant agrees that this Lease remains the same with the new landlord.
+(B) Tenant may not transfer this Lease or sublease (rent to another person) the Property or any part of the Property without Landlord's written permission.
+17. PETS
+Tenant will not keep or allow any pets on any part of the Property.
+18. RULES AND REGULATIONS
+(A) Rules and Regulations for use of the Property- and common areas are attached.
+	<input type="radio" name="rules_attached" id="rules_attached_yes" value="yes" checked/>
+	<label for="rules_attached_yes">Yes</label>
+	<input type="radio" name="rules_attached" id="rules_attached_no" value="no" />
+	<label for="rules_attached_no">No</label>
+(B) Any violation of the Rules and Regulations is a breach of this Lease.
+(C) Landlord may change the Rules and Regulations if the change benefits the tenant or improves the health, safety, or welfare of others. Landlord agrees to provide all changes to Tenant in writing.
+(D) Tenant is responsible for Tenant's family and guests obeying the Rules and Regulations and all laws.
+19. SMOKE DETECTORS AND FIRE PROTECTION SYSTEMS
+(A) Landlord has installed smoke detectors in the Property.  Tenant will maintain and regularly test smoke detectors to be sure they are in working order and will replace smoke detector batteries as needed.
+(B) Tenant will immediately notify Landlord or Landlord's agent of any broken or malfunctioning smoke detectors.
+(C) Failure to properly maintain smoke detectors, replace smoke detector batteries or not Landlord or Landlord's agent of any broken or malfunctioning smoke detectors is a breach of this Lease.
+(D) Landlord may provide additional fire protections systems for the benefit of Tenant.
+(E) Tenant will pay for damage to the Property if Tenant fails to maintain smoke detectors or other fire protection systems.
+20. LEAD-BASED PAINT HAZARD DISCLOSURES FOR PROPERTY BUILT BEFORE 1978
+
+<input type="radio" name="pre1978" id="pre1978_yes" value="yes" />
+<label for="">Property was built in or after 1978. This paragraph does not apply.</label>
+<input type="radio" name="pre1978" id="pre1978_no" value="no" checked/>
+<label for="">Property was built before 1978. Landlord and Tenant must provide information in this paragraph.</label>
+<section>
+(A) Landlord does not know of any lead-based paint or lead-based paint hazards on the Property unless stated below:
+	<input type="checkbox" name="lead" id="lead-a" value="" />
+	<label for="lead-a">Landlord knows that there is lead-based paint, or that there are lead-based paint hazards on the property. Landlord must explain what Landlord knows about the lead-based paint and hazards, including how Landlord learned that it is there, where it is, and the condition of painted walls, trim and other surfaces. Landlord must give Tenant any other information Landlord has about the lead-based paint and lead-based paint hazards.</label>
+(B) Landlord has no reports or records about lead-based paint or lead-based paint hazards on the property unless stated below: 
+	<input type="checkbox" name="lead" id="lead-b" value="" />
+	<label for="lead-b">Landlord has given Tenant all available records and reports about lead-based paint or lead-based paint hazards on the Property. List records and reports:</label>
+(C) Tenant initial all that are true:
+	<input type="checkbox" name="lead" id="lead-c1" value="" />
+	<label for="lead-c1">Tenant has received the pamphlet Protect Your Family from Lead in Your Home.</label>
+	<input type="checkbox" name="lead" id="lead-c2" value="" />
+	<label for="lead-c2">Tenant has read the information given by Landlord in paragraph 20 (A) and (B) above.</label>
+	<input type="checkbox" name="lead" id="lead-c3" value="" />
+	<label for="lead-c3">Tenant has received all records and reports that Landlord listed in paragraph 20 (B) above.</label>
+(D) Landlord and Tenant certify, by signing this Lease, that the information given is true to the best of their knowledge
+</section>
+21. DESTRUCTION OF PROPERTY
+(A) Tenant will notify Landlord or Landlord's agent immediately if the Property is severely damaged or destroyed by fire or by any other cause. Tenant will immediately notify Landlord or Landlord's agent of any condition in the property that could severely damage or destroy the Property.
+(B) If the Property is severely damaged or destroyed for any reason: 
+1. Tenant may continue to live on the livable part of the Property and pay a reduced rent as agreed to by Tenant and Landlord until the damages are repaired, 
+OR
+2. If the law does not allow Tenant to live on the property, this Lease is ended.
+(C) If Lease is ended, Landlord will return any unused security deposit or advanced rent to Tenant.
+(D) If Tenant, Tenant's family, or Tenant's guests cause damage by fire or by other means, this Lease will remain in effect and Tenant will continue to pay rent, even if Tenant cannot occupy the property.
+22. INSURANCE AND RELEASE
+(A) Tenant understands that Landlord's insurance does not cover Tenant, Tenant's property, or Tenant's guests. Tenant is advised to obtain properly and liability insurance to protect Tenant, Tenant's property and Tenant's guests who may be injured while on the Property.
+	<input type="checkbox" name="insurance" id="insurance" value="insurance_required" />
+	<label for="insurance">IF CHECKED, Tenant must have insurance policies providing at least $___________ property insurance and $_____________ liability insurance to protect Tenant, Tenant's property and Tenant's guests who may be injured while on the Property. Tenant must maintain this insurance through the entire Term and any Renewal Tenn. Tenant will provide proof of insurance upon request.</label>
+(B) Landlord is not legally responsible for any injury or damage to Tenant or Tenant's guests that occurs on the Property.
+(C) Tenant is responsible for any loss to Landlord caused by Tenant, Tenant’s family or Tenant’s guests, including attorney’s fees. 
+
+<section class="toplevel">
+	<header><h2>Ending Lease</h2></header>
+	23. LANDLORD REMEDIES IF TENANT BREACHES LEASE
+(A) If Tenant breaches Lease for any reason Landlord's remedies may include any or all of the following: 
+1. Taking possession of the Property by going to court to evict Tenant. Tenant agrees to pay Landlord's legal fees and reasonable costs, including the cost of Landlord or Landlord's agent to attend court hearings.
+2. Filing a lawsuit against Tenant for rents, damages and unpaid charges, and for rents and charges for the rest of the Lease term. If Landlord wins (gets a money judgment against Tenant), Landlord may use the court process to garnish Tenant’s wages and take Tenant’s personal goods, furniture, motor vehicles and money in banks.
+3. Keeping Tenant's Security Deposit to be applied against unpaid rent or damages or both.
+(B) If Tenant breaches Lease for any reason, Landlord can begin eviction proceedings without written notice.
+TENANT WAIVES OR GIVES UP TENANT'S RIGHT TO A NOTICE TO MOVE OUT UNLESS A DIFFERENT NOTICE PERIOD IS STATED HERE: 
+________________________________________________________________________________________________________ 
+________________________________________________________________________________________________________
+24. TENANT ENDING LEASE EARLY
+Tenant may end this Lease and move out of the Property before the End Date of the Lease or any Renewal Term only with written permission of Landlord, and only if:
+(A) Tenant gives Landlord at least ___60___ days written notice, AND
+(B) Tenant pays Landlord a Termination fee of $____1,525___, AND
+(C) Tenant continues to pay all rent until the End Date of the Lease, or any Renewal Term, or until a new tenant is approved by Landlord and a new lease takes effect, whichever happens first.
+25. ABANDONMENT
+(A) If Tenant abandons Property while Rent is due and unpaid, Landlord has the right to take possession of the property immediately and to rent the Property to another tenant.
+(B) Any of Tenant's personal property or possessions remaining on the Property after Tenant moves out will be considered to be abandoned property. Landlord will have the right to remove and dispose of any abandoned property in any manner determined by Landlord. Tenant will pay for the cost of removal and disposal of abandoned property.
+26. SALE OF PROPERTY
+(A) If Property is sold, Landlord will give Tenant in writing: 
+1. Notice that the Security Deposit has been given to the new landlord, who will be responsible for it.
+2. The name, address and phone number of the new landlord and where rent is to be paid, if known.
+(B) Tenant agrees that Landlord may transfer Tenant’s Security Deposit and advanced rent to the new landlord.
+(C) Landlord’s responsibilities to Tenant under this Lease end after the Property has been sold and the Lease transferred to a new landlord.
+(D) If Landlord sells the Property during the Lease or any Renewal Term, Landlord has the right to terminate this Lease if Landlord gives at least ____45______ days written notice to Tenant. Tenant is not entitled to any payment of damages.
+27. IF GOVERNMENT TAKES PROPERTY
+(A) The government or other public authority can take private property for public use. The taking is called condemnation.
+(B) If any part of the Property is taken by the government, Landlord will reduce Tenant's rent proportionately. If all the property is taken or is no longer usable, this Lease will end and Tenant will move out. Landlord will return to Tenant any unused Security Deposit or advanced rent.
+(C) No money paid to Landlord for the condemnation of the Property will belong to Tenant.
+</section>
+<section class="toplevel">
+	<header><h2>Additional Terms</h2></header>
+	28. TENANT HAS FEWER RIGHTS THAN MORTGAGE LENDER   
+Landlord may have a mortgage on the Property. The rights of the mortgage lender come before the rights of the Tenant. (Example: If Landlord fails to make mortgage payments, the mortgage lender could take the Property and end this Lease.)
+TENANT MAY BE WAIVING OR GIVING UP TENANT'S RIGHTS. TENANT UNDERSTANDS THAT IF THERE IS
+ A FORECLOSURE, THE NEW OWNER WILL HAVE THE RIGHT TO END THIS LEASE.
+29. CAPTIONS
+The headings in this Lease are meant only to make it easier to find the paragraphs.
+30. ENTIRE AGREEMENT
+This Lease is the entire agreement between Landlord and Tenant. No spoken or written agreements made before are a part of this Lease unless they are included in this Lease in writing. No waivers or modifications of this Lease during the Term of this Lease are valid unless in writing signed by both Landlord and Tenant.
+</section>
+<section class="toplevel">
+	<header><h2>Signatures</h2></header>
+	<p>NOTICE BEFORE SIGNING: If Tenant has legal questions, Tenant is advised to consult an attorney.</p>
+	<p>By signing below, Landlord and Tenant acknowledge that they have read and understand the notices and explanatory information set forth in this Lease.</p>
+WITNESS _________________________________TENANT________________________________________________ DATE ________________ 
+WITNESS _________________________________TENANT________________________________________________ DATE ________________
+WITNESS _________________________________TENANT________________________________________________ DATE ________________
+WITNESS _________________________________CO-SIGNER_____________________________________________ DATE________________
+WITNESS _________________________________CO-SIGNER_____________________________________________ DATE________________
+WITNESS _________________________________CO-SIGNER_____________________________________________ DATE________________ 
+WITNESS ________________________________LANDLORD_____________________________________________ DATE_________________
+WITNESS ________________________________LANDLORD_____________________________________________ DATE_________________
+WITNESS ________________________________LANDLORD_____________________________________________ DATE_________________
+<p>
+IF LANDLORD TRANSFERS LEASE TO A NEW LANDLORD
+As part of payment received by Landlord, _______________________________________________ (current Landlord) now transfers to _______________________________________ (new Landlord) his heirs and estate, this Lease and the right to receive the rents and other benefits.
+</p>
+WITNESS ________________________________LANDLORD_____________________________________________ DATE_________________
+WITNESS ________________________________LANDLORD_____________________________________________ DATE_________________
+</ol>
+</form>
+</div>

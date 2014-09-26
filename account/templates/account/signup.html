@@ -1,0 +1,57 @@
+{% extends "index.html" %}
+
+{% load url from future %}
+{% load i18n %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block content %}
+<h1>{% trans "Sign Up" %}</h1>
+
+<p>{% blocktrans %}Already have an account? Then please <a href="{{ url 'account:login' }}">sign in</a>.{% endblocktrans %}</p>
+
+<form class="signup" id="signup_form" method="post" action="{% url 'account:signup' %}">
+  {% csrf_token %}
+  {{ form.as_p }}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+  <button type="submit">{% trans "Sign Up" %} &raquo;</button>
+</form>
+    <div class="row">
+    <div class="large-6 columns">
+      <div class="signup-panel">
+        <p class="welcome"> Welcome to this awesome app!</p>
+        <form>
+          <div class="row collapse">
+            <div class="small-2  columns">
+              <span class="prefix"><i class="fi-torso-female"></i></span>
+            </div>
+            <div class="small-10  columns">
+              <input type="text" placeholder="username">
+            </div>
+          </div>
+          <div class="row collapse">
+            <div class="small-2 columns">
+              <span class="prefix"><i class="fi-mail"></i></span>
+            </div>
+            <div class="small-10  columns">
+              <input type="text" placeholder="email">
+            </div>
+          </div>
+          <div class="row collapse">
+            <div class="small-2 columns ">
+              <span class="prefix"><i class="fi-lock"></i></span>
+            </div>
+            <div class="small-10 columns ">
+              <input type="text" placeholder="password">
+            </div>
+          </div>
+        </form>
+        <a href="#" class="button ">Sign Up! </a>
+         <p>Already have an account? <a href="#">Login here &raquo</a></p>
+      </div>
+    </div>
+   </div>
+
+{% endblock %}
